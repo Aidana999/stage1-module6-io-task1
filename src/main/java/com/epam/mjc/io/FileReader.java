@@ -13,7 +13,7 @@ public class FileReader {
             return createProfileFromData(profileData);
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+            return null; 
         }
     }
 
