@@ -16,7 +16,6 @@ public class FileReader {
     try {
             String fileData = readFileToString(file);
             Map<String, String> profileData = parseFileData(fileData);
-
             return createProfileFromData(profileData);
         } catch (IOException e) {
             e.printStackTrace();
