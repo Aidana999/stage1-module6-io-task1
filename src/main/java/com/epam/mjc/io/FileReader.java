@@ -12,10 +12,11 @@ import java.util.Map;
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
-        //return new Profile();
-        try {
+    //     return new Profile();
+    try {
             String fileData = readFileToString(file);
             Map<String, String> profileData = parseFileData(fileData);
+
             return createProfileFromData(profileData);
         } catch (IOException e) {
             e.printStackTrace();
